@@ -40,10 +40,10 @@
   };
   
   programs.hyprland = {
-      enable = true;
-      xwayland.enable = true;
+    enable = true;
+    xwayland.enable = true;
   };
-  
+
   environment.systemPackages = with pkgs; [
     vim
     wget
@@ -51,6 +51,7 @@
     git-credential-manager
     tree
     kitty
+    sshfs
   ];
  
   fonts.packages = with pkgs; [

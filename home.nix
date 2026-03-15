@@ -23,6 +23,7 @@ in
             la = "eza -la";
             lt = "eza -laT";
             ff = "fastfetch";
+            cs = "colorscript -r";
             pk = "pokemon-colorscripts -r";
         };
         profileExtra = ''
@@ -185,6 +186,8 @@ in
         adw-gtk3
         nwg-look
         kdePackages.qt6ct
+        rose-pine-hyprcursor
+        papirus-icon-theme
     ];
 }
 
