@@ -33,10 +33,6 @@
   users.users.zm = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-    packages = with pkgs; [
-      eza
-      bat
-    ];
   };
   
   programs.hyprland = {
@@ -49,9 +45,7 @@
     wget
     git
     git-credential-manager
-    tree
     kitty
-    sshfs
   ];
  
   fonts.packages = with pkgs; [

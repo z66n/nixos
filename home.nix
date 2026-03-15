@@ -179,6 +179,9 @@ in
         helix
         yazi
         btop
+        eza
+        sshfs
+        age
         dwt1-shell-color-scripts
         pokemon-colorscripts
         firefox
