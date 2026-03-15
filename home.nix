@@ -33,6 +33,8 @@ in
         # initExtra = ''
         #     if [[ $SHLVL -eq 1 ]]; then
         #         fastfetch
+        #         # colorscript -r
+        #         # pokemon-colorscripts -r
         #     fi
         # '';
     };
@@ -42,7 +44,10 @@ in
         settings = {
             init.defaultBranch = "main";
             user.useConfigOnly = true;
-            credential.helper = "manager";
+            credential = {
+                helper = "manager";
+                credentialStore = "cache";
+            };
         };
     };
 
