@@ -1,4 +1,4 @@
-# nixos
+# nixos-dotfiles
 
 This repository contains my system configuration (`configuration.nix`), user configuration (`home.nix`), hardware configuration, and some application config files managed through flakes.
 
