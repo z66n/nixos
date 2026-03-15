@@ -48,6 +48,7 @@
     vim
     wget
     git
+    git-credential-manager
     tree
     kitty
   ];

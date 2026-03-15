@@ -39,9 +39,10 @@ in
 
     programs.git = {
         enable = true;
-        extraConfig = {
+        settings = {
             init.defaultBranch = "main";
             user.useConfigOnly = true;
+            credential.helper = "manager";
         };
     };
 
@@ -172,6 +173,7 @@ in
         helix
         yazi
         btop
+        dwt1-shell-color-scripts
         pokemon-colorscripts
         firefox
         pywalfox-native
