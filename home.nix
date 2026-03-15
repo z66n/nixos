@@ -37,6 +37,14 @@ in
         # '';
     };
 
+    programs.git = {
+        enable = true;
+        extraConfig = {
+            init.defaultBranch = "main";
+            user.useConfigOnly = true;
+        };
+    };
+
     programs.kitty = {
         enable = true;
         font = {
