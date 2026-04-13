@@ -1,10 +1,12 @@
-{ config, lib, pkgs, ... }:
-
 {
-  imports =
-    [ 
-      ./hardware-configuration.nix
-    ];
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -32,9 +34,9 @@
 
   users.users.zm = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel"]; # Enable ‘sudo’ for the user.
   };
-  
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -47,17 +49,15 @@
     git-credential-manager
     kitty
   ];
- 
+
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     maple-mono.NF-CN
   ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   services.openssh.enable = true;
 
-  system.stateVersion = "25.11"; 
-
+  system.stateVersion = "25.11";
 }
-
